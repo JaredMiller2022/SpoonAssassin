@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RHS Spoon Assassin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/stylesheet.css" />
+  <link rel="shortcut icon" type="image/jpg" href="Images/GoldenSpoon.jpg" /> 
+</head>
+
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" style="color:red" class="w3-bar-item w3-button desktopHome">HOME</a>
+      <a href="#home" style="color:red" class="w3-bar-item w3-button mobileHome" onclick="toggleFunction()">HOME</a>
+      <a href="#about" style="color:red" class="w3-bar-item w3-button w3-hide-small"> ABOUT</a>
+      <a href="#week2" style="color:red" class="w3-bar-item w3-button w3-hide-small"> WEEK 2</a>
+      <a href="#rules" style="color:red" class="w3-bar-item w3-button w3-hide-small"> RULES</a>
+      <a href="#qa" style="color:red" class="w3-bar-item w3-button w3-hide-small"> Q&A</a>
+      <!--a href="#report" style="color:red" class="w3-bar-item w3-button w3-hide-small"> REPORT A KILL</a-->      
+      <!--a href="#signup" style="color:red" class="w3-bar-item w3-button w3-hide-small"> SIGN UP</a-->
+      <a href="#contact" style="color:red" class="w3-bar-item w3-button w3-hide-small"> CONTACT</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" style="color:red" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#week2" style="color:red" class="w3-bar-item w3-button" onclick="toggleFunction()">WEEK 2</a>
+    <a href="#rules" style="color:red" class="w3-bar-item w3-button" onclick="toggleFunction()">RULES</a>
+    <a href="#qa" style="color:red" class="w3-bar-item w3-button" onclick="toggleFunction()">Q&A</a>
+    <!--a href="#report" style="color:red" class="w3-bar-item w3-button" onclick="toggleFunction()">REPORT A KILL</a-->
+    <!--a href="#signup" style="color:red" class="w3-bar-item w3-button" onclick="toggleFunction()">SIGN UP</a-->
+    <a href="#contact" style="color:red" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!--First Parallax Image with Logo Text -->
+<div class="desktopHome bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity"><a style="color:red">Robbinsville High School</a></span>
+    <br>
+    <span class="w3-center w3-black w3-xxlarge w3-wide w3-animate-opacity"><a style="color:red;padding-left:25px;padding-right:20px;">SPOON ASSASSIN</a></span>
+  </div>
+</div>
+
+<!--First Parallax with Logo Text on mobile-->
+<div class="mobileHome bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity"><a style="color:red;">RHS SPOON ASSASSIN</a></span>
+  </div>
+</div>
+
+<!--make only one title page show up based on mobile or desktop-->
+<style>
+  @media screen and (min-width: 500px) {
+      .mobileHome {
+          display: none !important;
+      }
+  }
+  @media screen and (max-width: 500px) {
+      .desktopHome {
+          display: none !important;
+      }
+  }
+</style>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-32" id="about">
+  <h2 class="w3-center" style="color:red">ABOUT US</h2>
+  <p>
+    This is the official website of the Robbinsville High School Spoon Assassin Games. The games will happen on a weekly basis. The Sign Up form will open the Friday prior to the next round. We ask that you read the Rules section of this website in its entierty prior to signing up for a game. In addition, you must be a senior at Robbinsville High School to play.
+    <br><br>
+    Our mission is to provide a fun and safe way to spice up the boring school days of senior year. Although there is no cure to Senioritis, this is as close as we have ever come.
+    <br><br>
+    We are not affiliated with Robbinsville High School, but are a self organized student group at the school.
+  </p>
+  <a style="text-decoration:none" href="mailto:SpoonAssassinRHS@Gmail.com"><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-center"></i> SpoonAssassinRHS@Gmail.com</a><br>
+</div>
+
+<!-- Container (Week 2 Section) -->
+<div class="w3-content w3-container w3-padding-32" id="week2">
+  <h2 class="w3-center" style="color:red">WEEK 2 GAME STATISTICS</h2>
+  <div class="w3-row w3-center w3-grey">
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">62</span><br>
+      Starting Assassins
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">22</span><br>
+      Alive After Day 1
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">...</span><br>
+      Alive After Day 2
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">15</span><br>
+      Assassins Remaining
+    </div>
+  </div>
+  <div class="w3-row w3-center">
+    <div class="w3-quarter w3-section">
+      <a style="color:green">Adam Holgado</a><a style="color:black">...0 kills</a><br>
+      <a style="color:green">Anthony Rossi</a><a style="color:black">...1 kills</a><br>
+      <a style="color:green">Cailyn Gallagher</a><a style="color:black">...0 kills</a><br>
+      <a style="color:green">Cole Benner</a><a style="color:black">...3 kills</a><br>
+      <br>
+      <a style="color:red">Angelina Alpert</a><a style="color:black">...1 kills</a><br>
+      <a style="color:red">Ash Ganesh</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Ashley Stamboulian</a><a style="color:black">...1 kills</a><br>
+      <a style="color:red">Austin Herbert</a><a style="color:black">...2 kills</a><br>
+      <a style="color:red">Ava Dominguez</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Branford Kanagawa</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Brenden Bechamps</a><a style="color:black">...2 kills</a><br>
+      <a style="color:red">Brian Nodine</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Brian Snyder</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Chris Heller</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Dahany Choi</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Daniela Porchetta</a><a style="color:black">...0 kills</a><br>
+
+    </div>
+    <div class="w3-quarter w3-section">
+      <a style="color:green">Emma Bennit</a><a style="color:black">...2 kills</a><br>
+      <a style="color:green">Jake Veres</a><a style="color:black">...1 kills</a><br>
+      <a style="color:green">Jeff Lin</a><a style="color:black">...5 kills</a><br>
+      <br>
+      <a style="color:red">Dylan Scholl</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Emma Roberts</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Jack Grembowitz</a><a style="color:black">...1 kills</a><br>
+      <a style="color:red">Jack Lipschutz</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Jack Shea</a><a style="color:black">...3 kills</a><br>
+      <a style="color:red">Jared Hayes</a><a style="color:black">...1 kills</a><br>
+      <a style="color:red">Jared Miller</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Joey Vardakis</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">John Covalo</a><a style="color:black">...1 kills</a><br>
+      <a style="color:red">Jon Breyta</a><a style="color:black">...2 kills</a><br>
+      <a style="color:red">Julia Ruch</a><a style="color:black">...2 kills</a><br>
+      <a style="color:red">Kate Mushkarova</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Kayli Heverin</a><a style="color:black">...1 kills</a><br>
+    </div>
+    <div class="w3-quarter w3-section">
+      <a style="color:green">Lexi Kolbe</a><a style="color:black">...0 kills</a><br>
+      <a style="color:green">Mariko McMurtry</a><a style="color:black">...1 kills</a><br>
+      <a style="color:green">Patrick Holzbaur</a><a style="color:black">...0 kills</a><br>
+      <br>
+      <a style="color:red">Kevin Corcoran</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Kelly Kale</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Marc Caiola</a><a style="color:black">...1 kills</a><br>
+      <a style="color:red">Matt Klepper</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Matthew Savoca</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Megan Testa</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Michael Garvey</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Michael Mathews</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Michael Prodnov</a><a style="color:black">...1 kills</a><br>
+      <a style="color:red">Morgan Kovacs</a><a style="color:black">...1 kills</a><br>
+      <a style="color:red">Nicole Radosti</a><a style="color:black">...1 kills</a><br>
+      <a style="color:red">Nick Anderson</a><a style="color:black">...0 kills</a><br>
+    </div>
+    <div class="w3-quarter w3-section">
+      <a style="color:green">Quinn Cummings</a><a style="color:black">...2 kills</a><br>
+      <a style="color:green">Rachel Sepcic</a><a style="color:black">...1 kills</a><br>
+      <a style="color:green">Robert Cimilluca</a><a style="color:black">...0 kills</a><br>
+      <a style="color:green">Ryan Drake</a><a style="color:black">...4 kills</a><br>
+      <a style="color:green">Ryan Van Duren</a><a style="color:black">...1 kills</a><br>
+      <br>
+      <a style="color:red">Ritvik Agnihotri</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Roman Rychkov</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Siret Mann</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Sam Karkut</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Sanaan Akhter</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Sara Toscano</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Shiv Bhatt</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Tanvi Gehani</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Tejas Godse</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Tushar Katiyar</a><a style="color:black">...0 kills</a><br>
+    </div>
+</div>
+
+<!--
+<div class="w3-content w3-container w3-padding-32" id="week1">
+  <p class="w3-large w3-center w3-padding-16"><a style="color:black">Week 1 Game Statistics<a></p>
+  <p class="w3-wide">Assassins Remaining</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:3.5%">3%</div>
+  </div>
+  <br>
+  <div class="w3-row w3-center w3-grey">
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">28</span><br>
+      Starting Assassins
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">14</span><br>
+      Alive After Day 1
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">1</span><br>
+      Alive After Day 2
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">1</span><br>
+      Assassins Remaining
+    </div>
+  </div>
+  <div class="w3-row w3-center w3-padding-16">
+    <div class="w3-quarter w3-section">
+      <a style="color:red">Adam Holgado</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Anthony Rossi</a><a style="color:black">...1 kills</a><br>
+      <a style="color:red">Austin Herbert</a><a style="color:black">...3 kills</a><br>
+      <a style="color:red">Branford Kanagawa</a><a style="color:black">...1 kills</a><br>
+      <a style="color:red">Brenden Bechamps</a><a style="color:black">...1 kills</a><br>
+      <a style="color:red">Chris Heller</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Cole Benner</a><a style="color:black">...1 kills</a>
+    </div>
+    <div class="w3-quarter w3-section">
+      <a style="color:green">Dahany Choi</a><a style="color:black">...5 kills</a><br>
+      <a style="color:red">Dylan Scholl</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Jack Lipschutz</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Jack Shea</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Jared Hayes</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Jeff Lin</a><a style="color:black">...1 kills</a><br>
+      <a style="color:red">John Covalo</a><a style="color:black">...1 kills</a>
+    </div>
+    <div class="w3-quarter w3-section">
+      <a style="color:red">Jon Breyta</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Matthew Savoca</a><a style="color:black">...1 kills</a><br>
+      <a style="color:red">Michael Garvey</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Nick Anderson</a><a style="color:black">...3 kills</a><br>
+      <a style="color:red">Patrick Holzbaur</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Quinn Cummings</a><a style="color:black">...1 kills</a><br>
+      <a style="color:red">Ritvik Agnihotri</a><a style="color:black">...2 kills</a>
+    </div>
+    <div class="w3-quarter w3-section">
+      <a style="color:red">Robert Cimilluca</a><a style="color:black">...2 kills</a><br>
+      <a style="color:red">Roman Rychkov</a><a style="color:black">...1 kills</a><br>
+      <a style="color:red">Ryan Drake</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Ryan Van Duren</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Shiv Bhatt</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Tejas Godse</a><a style="color:black">...0 kills</a><br>
+      <a style="color:red">Tushar Katiyar</a><a style="color:black">...1 kills</a>
+    </div>
+  </div>
+</div>
+-->
+
+  <!-- Container (Rules Section) -->
+  <div class="w3-content w3-container w3-padding-32" id="rules">
+    <h2 class="w3-center" style="color:red">RULES</h2>
+    <p class="w3-center"><em>Read through the Q&A in addition to the Rules in order to fully understand how to play the game.</em></p>
+    <p>
+      <h4 style="color:black">To Get Started:</h4>
+      You need a single cafeteria-sized plastic spoon. Write on the spoon the name of the the first victim you have been assigned for the round. The game will be played in school from right before the first bell (7:20 a.m.) to the last bell (2:35 p.m.) and continue the following day. If you are not in school during one of the days of the game, you must notify your Game Moderator, and will be eliminated. Each game will only last until 2:35 p.m. on the Friday of the week it is being played regardless of how many people are remaining...so kill fast.
+    </p>
+    <p>
+      <h4 style="color:black">Eligibility:</h4>
+      Anywhere on school grounds is fair game. However, you cannot assassinate someone while they are in a class that they belong in, even if it is before/after the bell. Gym, commons, the auditorium and the media center are all fair game. No matter where you are during your lunch, even if you are in a classroom, you are vulnerable. You can also take advantage of someone when they are anywhere on school grounds (parking lot and teachers’ rooms included) until 2:35 p.m.
+    </p>
+    <p>
+      <h4 style="color:black">To Kill Someone:</h4>
+      Don’t make a scene. No one can see you make your kill. Tag your target with your spoon (the scoop end, not the handle) above the waist and below the head, but nowhere on the arms or hands. The spoon must be in your hand when you make the kill. Immediately after committing the act, report the kill on this website to make it official. You must report your kill before you are allowed to move on to your next victim.
+    </p>
+    <p>
+      <h4 style="color:black">If You See Someone Being Killed:</h4>
+      Say (don’t yell!) “I saw that” within 5 seconds to the assassin and target, but only if you see the spoon. This is now an invalid kill, and the assassin must try again, with the added challenge of being “exposed.” The witness, assassin and target MUST NOT reveal their new information to ANYONE ELSE. If you see the initial stab in the arm to initiate a "duel" (described below) the duel will be called off, and nobody is to be dead or frozen.
+    </p>
+    <p>
+      <h4 style="color:black">If You Are Killed:</h4>
+      Don’t make a scene. “Dead men tell no tales.” Give your spoon to the person who assassinated you and the name on it then becomes their next victim. You may not participate by helping anyone else who is still living and you are not longer eligible to be a witness for “I saw that” rule. *Cue the sad music* Once you are dead, you can sit back, relax and enjoy the show. However, please do not share any information you may find to living assassins; it just makes the suspense and mystery of the game less fun for everyone involved. Almost every assassin in Week 1 has said they would rather everybody keep quiet about their actions so assassin/target duos remain secretive.
+    </p>
+    <p>
+      <h4 style="color:black">Dueling:</h4>
+      The arm, from shoulder to fingertips, may be used to block a spoon. The upper shoulder, from the base of the neck to the top of the arm, is fair game and may not be used to block. This begins a "duel", or spoon fight between assassin and mark. If the mark is able to tag their assassin before being tagged themselves, they “freeze” their assassin. Have your spoon ready and be prepared for a duel at all times. If you do not have your spoon handy, a duel can still occur; you just have to grab it ASAP and summon your inner ninja. Once an assassin has been frozen, they are required to cease all offensive efforts for exactly 30 minutes after the assassination attempt. However, if the assassin tags the mark first, the mark is dead and you must proceed with the procedures listed above. Once a duel begins, the “I saw that” rule no longer applies to tags. The first eligible tag is final and will either result in a death or freeze.
+    </p>
+    <p>
+      <h4 style="color:red">Honor Code:</h4>
+      1) Don't be a dodo head. If you get assassinated, embrace it and go down with honor. Wakanda Forever!
+      <br>
+      2) Please don’t yell or make a scene, especially in front of any teachers and definitely not near anyone from administration. They will shut this down so fast if we are obnoxious.
+      <br>
+      3) If we were to get in trouble, and it is not clearly someone’s wrongdoing, we all take the blame equally.
+    </p>
+  </div>
+  
+  <!-- Container (Q&A Section) -->
+  <div class="w3-content w3-container w3-padding-32" id="qa">
+    <h2 class="w3-center" style="color:red">Q&A</h2>
+    <p>
+      <h4 style="color:black">To Get Started:</h4>
+      <a style="color:red">Q:</a> What are the spoon specifications?<br>
+      <a style="color:red">A:</a> The spoon must be plastic and no larger than the size of the white spoons in the RHS cafeteria. It can be any color. Just know that it needs to be something you are willing to give away when you are assassinated.<br><br>
+      <a style="color:red">Q:</a> What happens if there is more than one assassin remaining at the final bell on Friday?<br>
+      <a style="color:red">A:</a> If there are four people or less, the winner will be determined by an organized and moderated duel after the final bell. If there are five or more people, the game will either continue over the weekend off of school grounds, or the remaining assassins’ rankings will be determined by their kill counts.<br>
+    </p>
+    <p>
+      <h4 style="color:black">Eligibility:</h4>
+      <a style="color:red">Q:</a> Am I eligible to be killed if I am sitting/standing in my spot for attendence gym?<br>
+      <a style="color:red">A:</a> No.<br><br>
+      <a style="color:red">Q:</a> Am I eligible to be killed if I am in the locker room in gym?<br>
+      <a style="color:red">A:</a> Yes.<br><br>
+      <a style="color:red">Q:</a> Am I eligible to be killed if our class is sitting on the bleachers in the gym and doesn't actually have gym that day?<br>
+      <a style="color:red">A:</a> Yes.<br><br>
+      <a style="color:red">Q:</a> If I am in commons, the auditorium or the media center, are there any restrictions on when I am eligible to be assassinated?<br>
+      <a style="color:red">A:</a> No.<br><br>
+      <a style="color:red">Q:</a> If I am taking a test/quiz or getting help from a teacher during lunch am I vulnerable to be assassinated?<br>
+      <a style="color:red">A:</a> No.<br><br>
+      <a style="color:red">Q:</a> If classes are changing, can I enter any classroom to seek refuge??<br>
+      <a style="color:red">A:</a> No; you must be in the class that you have just come from or the class you are going to to be safe. As soon as you are in the hallway you are vulnerable.<br><br>
+      <a style="color:red">Q:</a> Am I vulnerable to attack if I am in the bathroom?<br>
+      <a style="color:red">A:</a> Yes.<br><br>
+      <a style="color:red">Q:</a> Can I assassinate someone in the parking lot?<br>
+      <a style="color:red">A:</a> Yes.<br><br>
+      <a style="color:red">Q:</a> Can I assassinate someone when they are in a car?<br>
+      <a style="color:red">A:</a> Yes, but you may not open someone's door or window when it is closed.<br><br>
+      <a style="color:red">Q:</a> Can I assassinate someone when I am in a car?<br>
+      <a style="color:red">A:</a> Yes, but the car must be in park.<br>
+      <a style="color:red">Q:</a> Can I kill someone by hitting their backpack with my spoon?<br>
+      <a style="color:red">A:</a> It depends. The main of the backpack may be used as a shield. The straps, however, when in contact with the person wearing it, are fair game as if it was just part of the target's shirt.<br><br>
+      <a style="color:red">Q:</a> Can wear my backpack on the front as a shield?<br>
+      <a style="color:red">A:</a> Yes, but this will leave your entire back-side exposed.<br><br>
+      <a style="color:red">Q:</a> May I have more than one bag/backpack to use as a shield?<br>
+      <a style="color:red">A:</a> No. Every assassin may only have one backpack.<br><br>
+    </p>
+    <p>
+      <h4 style="color:black">To Kill Someone:</h4>
+      <a style="color:red">Q:</a> When do I report the kill?<br>
+      <a style="color:red">A:</a> Report the kill immediately after your victim is officially dead, which is when they hand you their spoon with your next target's name on it.<br><br>
+      <a style="color:red">Q:</a> How do I submit my kill?<br>
+      <a style="color:red">A:</a> Keep this website open on your phone for fast submition. Fill out the "REPORT A KILL" form to make it official.<br>
+    </p>
+    <p>
+      <h4 style="color:black">If You See Someone Being Killed:</h4>
+      <a style="color:red">Q:</a> Do I have to say “I saw that” if I saw someone get killed?<br>
+      <a style="color:red">A:</a> Yes. Assassins are meant to be sneaky and any non-covert kills that are witnessed by other assassins still playing must be ruled invalid by an “I saw that” call.<br><br>
+      <a style="color:red">Q:</a> When can I say “I saw that”?<br>
+      <a style="color:red">A:</a> An assassin who is still alive in the current game can only call an “I saw that” in the event that they witness another assassin’s spoon as they attempt to kill their target. An “I saw that” cannot be called if the assassin is seen retrieving the spoon from their now dead target.<br><br>
+      <a style="color:red">Q:</a> Who can call an “I saw that”?<br>
+      <a style="color:red">A:</a> A kill can only be ruled invalid by an “I saw that” if it is called by a fellow assassin currently alive in the game.<br><br>
+      <a style="color:red">Q:</a> When is a kill invalid?<br>
+      <a style="color:red">A:</a> An “I saw that” call may rule a kill invalid if fellow players witnessed the assassin kill the target. However, if the assassin and target were engaged in a duel, an “I saw that” call cannot be used to invalidate the kill. An "I saw that" also may not be called after 10 seconds of the death or after the victim has already handed over their spoon--whichever comes first.<br><br>
+      <a style="color:red">Q:</a> Can I ever call “I saw that” during a duel?<br>
+      <a style="color:red">A:</a> No; however, if the spoon is spotted before the initial strike, "I saw that" can be called up until the victim strikes back.<br>
+    </p>
+    <p>
+      <h4 style="color:black">If You Are Killed:</h4>
+      <a style="color:red">Q:</a> Who reports the death after I die?<br>
+      <a style="color:red">A:</a> It is the assassin’s job to report their killing to the game moderator. They are unable to receive their target’s spoon and continue killing until an official report of the death has been submitted.<br><br>
+      <a style="color:red">Q:</a> What do I do now?<br>
+      <a style="color:red">A:</a> In the spirit of the game we ask that all assassinated targets keep the identity of their killer a secret, as well as the identity of any former and current targets you may have had before your unfortunate death. This will only make the game more fun for everyone in it and everyone watching, as the aspect of mystery is still prevalent.<br>
+    </p>
+    <p>
+      <h4 style="color:black">Dueling:</h4>
+      <a style="color:red">Q:</a> What initiates a duel?<br>
+      <a style="color:red">A:</a> If an assassin makes an attempt to kill their target which is thwarted by their target, the two now engage in a duel. A duel is initiated when the assassin approaches within arm-length of their target with their spoon in hand or lands a strike to the arm of their target. A victim’s arms may be used to block any oncoming strikes.<br><br>
+      <a style="color:red">Q:</a> Can a target initiate a duel with the intent of freezing their assassin?<br>
+      <a style="color:red">A:</a> No, the target can only defend from an oncoming strike from their assassin to enter a duel. The target may then attempt to strike and freeze their assassin.<br>
+    </p>
+    <p>
+      <h4 style="color:red">Honor Code:</h4>
+      No ifs, ands or buts. I *state your name* will follow this honor code or will be punished.
+    </p>
+  </div>
+
+  <!-- Container (Report A Kill Section) -->
+  <!--
+  <div class="w3-content w3-container w3-padding-32" id="report">
+    <h2 class="w3-center" style="color:red">REPORT A KILL</h2>
+    
+    <p class="w3-center"><em>There is not currently a game in session.</em></p>
+    
+    <p class="w3-center"><em>Do not report a fake kill. This would just cause congestion and make the game run less smooth. We will confirm each kill with the assassin and if we find you reported a fake kill, you will be eliminated from the game.</em></p>
+    <div class="w3-col m8 w3-panel">
+      <form action="/action_page.php" target="_blank">
+        <p>Kill info...</p>
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Assassin's First Name" required name="aFirstName">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Assassin's Last Name" required name="aLastName">
+          </div>
+        </div>
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Victim's First Name" required name="vFirstName">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Victim's Last Name" required name="vLastName">
+          </div>
+        </div>
+        <p>I am the...</p>
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <input required type="radio" name="role" value="assassin">&nbsp Assassin<br>
+          <input required type="radio" name="role" value="victim"><b>&nbsp Victim<br>
+        </div>
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SUBMIT KILL
+        </button>
+      </form>
+    </div>
+    
+  </div>
+  -->
+
+  <!-- Container (Sign Up Section) -->
+  <!--
+  <div class="w3-content w3-container w3-padding-32" id="signup">
+    <h2 class="w3-center" style="color:red">WEEK 2 SIGN UP</h2>
+    
+    <p class="w3-center"><em>In order to maintain a steady growth of the Spoon Assassin Games, we will be holding Week 2 by invite only. Each assassin from Week 1 will get one nomination to add a participant for Week 2. This will allow us to have roughly 60 participants who are familiar with the rules and will allow for an easier transition to Week 3, where there will be open Sign Ups.</em></p>
+    
+    <p class="w3-center"><em>Please only sign up once per game.</em></p>
+    <div class="w3-col m8 w3-panel">
+      <p>Sign up with a phone number and email that you will check often throughout the game.</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="First Name" required name="FirstName">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Last Name" required name="LastName">
+          </div>
+        </div>
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Phone Number" required name="phone">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="email">
+          </div>
+        </div>
+
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <input required type="checkbox" name="senior">&nbsp I am a senior at Robbinsville High School.<br>
+          <input required type="checkbox" name="readAgree" selected><b>&nbsp I have read the rules, honor code and Q&A. I agree that I will follow the rules and honor code stated above. If I break any rules, I will be eliminated from the game.<br>
+        </div>
+
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SUBMIT ENTRY
+        </button>
+      </form>
+    </div>
+  </div>
+  -->
+
+  <!-- Container (Contact Us Section) -->
+  <div class="w3-content w3-container w3-padding-32" id="contact">
+    <h2 class="w3-center" style="color:red">CONTACT US</h2>
+    <p class="w3-center"><em>This form is currently under maintnance. For now, you can email us at <a href="mailto:SpoonAssassinRHS@Gmail.com">SpoonAssassinRHS@Gmail.com</a>.</em></p>
+    <!--
+    <p class="w3-center"><em>Feel free to send any questions, comments or suggestions our way.</em></p>
+    <div class="w3-col m8 w3-panel">
+      <p>We will get back to you by phone or email as soon as we can.</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="First Name" required name="FirstName">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Last Name" required name="LastName">
+          </div>
+        </div>
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Phone Number" required name="phone">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SUBMIT MESSAGE
+        </button>
+      </form>
+      -->
+    </div>
+    
+  </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <div class="desktopHome"><a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a></div>
+  <div class="mobileHome"><a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a></div>
+  <p>Powered by the courageous efforts of Spoon Assassins schoolwide.</p>
+</footer>
+
+<script>
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</body>
+</html>
